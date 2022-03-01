@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ARKSIN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-olOxEXxDwd20BlATUibkEnjPN3sVq2YWmYOnsMYutq7X8YcUdD6y/1I+f+ZOq/47" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="plugin/cta/css/zzsc.css" />
+    <link rel="stylesheet" href="./plugin/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="./plugin/vide7.10.2/css/video-js.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/channels.min.css">
+</head>
+
+<body class="channel">
+    <!-- logo -->
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+        <a href="/"><div class="animate-logo"></div></a>
+    </div>
+    <!-- 社交ICON -->
+    <div class="sns">
+        <span><a href="https://www.tiktok.com/@gensketch?" target="_blank"><img src="./images/sns_TikTok.png"
+                    alt=""></a></span>
+        <span><a href="https://www.instagram.com/gen.sketch?igshid=empzwxnp1n85" target="_blank"><img
+                    src="./images/sns_ins.png" alt=""></a></span>
+        <span><a href="https://www.youtube.com/channel/UC9ut0YvjdTnHE6L2wgwyTuw/featured" target="_blank"><img
+                    src="./images/sns_youtobe.png" alt=""></a></span>
+        <span><a href="https://www.facebook.com/ArksinMedia/" target="_blank"><img src="./images/sns_faceboook.png"
+                    alt=""></a></span>
+    </div>
+    <div class="sns sns_black on-menu-show">
+        <span><a href="https://www.tiktok.com/@gensketch?"><img src="./images/sns_TikTok_b.png" alt=""></a></span>
+        <span><a href="https://www.instagram.com/gen.sketch?igshid=empzwxnp1n85"><img src="./images/sns_ins_b.png"
+                    alt=""></a></span>
+        <span><a href="https://www.youtube.com/channel/UC9ut0YvjdTnHE6L2wgwyTuw/featured"><img
+                    src="./images/sns_youtobe_b.png" alt=""></a></span>
+        <span><a href="https://www.facebook.com/ArksinMedia/"><img src="./images/sns_faceboook_b.png" alt=""></a></span>
+    </div>
+    <div class="channel-title">CHANNELS</div>
+    <div class="middle">
+        <div class="l-box">
+            <div class="gs-box" id="gs-box">
+                <img id="icon-tab" src="./images/channel/alllogo.png" alt="">
+            </div>
+            <div class="tabs-wrapper">
+                <div class="tabs" id="tabs">
+                    <div class="tab-item active">ALL</div>
+                    <div class="dot">·</div>
+                    <div class="tab-item">GEN SKETCH</div>
+                    <div class="dot">·</div>
+                    <div class="tab-item">OTHERS</div>
+                    <div class="short-line"></div>
+                </div>
+                <p class="descript" id="tab-descript">
+                    <!-- ‘Gen Sketch’ -  Another bunch of struggling Aussie creatives. We’ll bring you fresh videos every week!  -->
+                </p>
+            </div>
+
+        </div>
+
+        <div class="r-box">
+            <div class="video-info">
+                <div class="top swiper-container txt-swiper">
+                    <div class="swiper-wrapper" id="txt-wrapper">
+                        <div class="info swiper-slide">
+                            <p class="caption"></p>
+                            <p class="date"></p>
+                        </div>
+                        <div class="info swiper-slide">
+                            <p class="caption"></p>
+                            <p class="date"></p>
+                        </div>
+                        <div class="info swiper-slide">
+                            <p class="caption"></p>
+                            <p class="date"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="r-video-list">
+                <div class="video-list">
+                    <div class="swiper-box">
+                        <div class="swiper-container img-swiper">
+                            <div class="swiper-wrapper" id="img-wrapper">
+                            </div>
+                            <!-- Add Pagination -->
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                        <div class="swiper-button swiper-button-prev" tabindex="0" role="button"
+                            aria-label="Previous slide" aria-disabled="false"></div>
+                        <div class="swiper-button swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                            aria-disabled="false"></div>
+                    </div>
+                </div>
+                <div class="moile-video-list">
+                    <div class="mobile-videos" id="mobile-videos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 菜单按钮/弹层 -->
+    <div class="menu-btn">
+        <i data-cta-target=".js-modal-3" class="bi bi-list"></i>
+    </div>
+    <div id="menu"></div>
+
+    <!-- 左下角 -->
+    <div id="q-and-a"></div>
+
+    <!-- 右下角 -->
+    <div class="right-bottom">
+        <img class="hi_1" src="./images/hi.png" alt="">
+        <img class="hi_1 on-menu-show hi_1_black" src="./images/hi_bg_black.png" alt="">
+        <img class="hi_2" src="./images/hi_2.png" alt="">
+        <img class="hi_2 on-menu-show hi_2_black" src="./images/hi_2_bg_black.png" alt="">
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-NU/T4JKmgovMiPaK2GP9Y+TVBQxiaiYFJB6igFtfExinKlzVruIK6XtKqxCGXwCG"
+        crossorigin="anonymous"></script>
+    <script src="./plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="plugin/cta/dist/cta.min.js"></script>
+    <script src="js/usecta.js"></script>
+    <script src="plugin/vide7.10.2/js/video.min.js"></script>
+    <script src="https://unpkg.com/larkplayer@latest/dist/larkplayer.js"></script>
+    <script src="./js/canvas-keyframes.min.js"></script>
+
+    <script>
+        window.onload = function () {
+            var allVideoDatas;
+            var curIndex = 0;
+            var myPlayer;
+            let myPlayerArr = [];
+            var channel1 = [];
+            var channel2 = [];
+            var channel3 = [];
+
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "http://urbanleaving.com:7888/api/home/index/getVideos" ,
+                data: {},
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 1) {
+                        var videos = res.data.videos;
+                        for(let i=0; i<videos.length; i++) {
+                            const obj = {
+                                url: videos[i].url,
+                                caption: videos[i].desc,
+                                date: fmtDate(Number(videos[i].createdTime)),
+                                poster: './images/slide_pic.png'
+                            };
+                            channel1.push(obj)
+                            if(videos[i]['type'] == 1) channel2.push(obj)
+                            if(videos[i]['type'] == 2) channel3.push(obj)
+                        }
+                        allVideoDatas = {
+                            0: channel1,
+                            1: channel2,
+                            2: channel3
+                        }
+                        console.log(allVideoDatas)
+                        tabChanges();
+                        loadChange(0);
+                    };
+                },
+                error : function(err) {
+                    alert("ERROR！", err);
+                }
+            });
+
+            document.querySelector('.swiper-arrow-prev').onclick = function () {
+                if (curIndex === videodata.length - 1) {
+                    curIndex = 0;
+                } else if (curIndex === 0) {
+                    curIndex = videodata.length - 1;
+                } else {
+                    curIndex--;
+                }
+                myPlayer.dispose();
+
+                var aboveVideoBox = document.getElementById("above-video-box");
+                aboveVideoBox.innerHTML = "<video id='my-video' class='video-js slide-video vjs-fluid' controls preload='auto' style='width: 100%;height: 100%' controlBar='true'></video>"
+
+                initVideo(videodata[curIndex]);
+                document.getElementById('my-video').click();
+            }
+
+            document.querySelector('.swiper-arrow-next').onclick = function () {
+                if (curIndex === videodata.length - 1) {
+                    curIndex = 0;
+                } else if (curIndex === 0) {
+                    curIndex = videodata.length - 1;
+                } else {
+                    curIndex++;
+                }
+                myPlayer.dispose();
+                var aboveVideoBox = document.getElementById("above-video-box");
+                aboveVideoBox.innerHTML = "<video id='my-video' class='video-js slide-video vjs-fluid' controls preload='auto' style='width: 100%;height: 100%' controlBar='true'></video>"
+                initVideo(videodata[curIndex]);
+                document.getElementById('my-video').click();
+            }
+
+            var videosSwipper = new Swiper('.layer-video-swipper', {
+                observer: true,			//轮播元素为内部动态添加必须加此 修改swiper自己或子元素时，自动初始化swiper
+                observeParents: true,
+                autoplay: false,
+                loop: false,
+                effect: 'fade',
+                touchMove: false,
+                fade: {
+                    crossFade: true
+                },
+                on: {
+                    slideChange: function (swiper) {
+                        // console.log('slideChange：', this.activeIndex);
+                        // console.log(this.activeLoopIndex)
+                    },
+                    transitionStart: function (swiper) {
+                        console.info("页面跳转到第:", swiper.activeIndex, " 页")
+                    },
+                },
+                navigation: {
+                    nextEl: '.swiper-arrow-next',
+                    prevEl: '.swiper-arrow-prev'
+                }
+            })
+                
+            // tab切换
+            // tabChanges();
+            function tabChanges() {
+                var tabs = document.getElementById('tabs')
+                var tabItems = tabs.getElementsByClassName('tab-item');
+
+                for (let i = 0; i < tabItems.length; i++) {
+                    tabItems[i].onclick = (function (i) {
+                        return function () {
+                            console.log(i);
+                            let className = tabItems[i].className;
+                            for (let j = 0; j < tabItems.length; j++) {
+                                if (j !== i) {
+                                    tabItems[j].className = tabItems[j].className.replace(/active/g, '');
+                                }
+                            }
+                            tabItems[i].className = className + ' active';
+                            loadChange(i);
+
+                            if ($(window).width() <= 640) {
+                                var allData = [];
+
+                                if(i === 0) { // all 
+                                    allData = allData.concat(allVideoDatas[0]);
+                                    allData = allData.concat(allVideoDatas[1]);
+                                    allData = allData.concat(allVideoDatas[2]);
+                                } else {
+                                    allData = allVideoDatas[i];
+                                }
+                                console.log(allData)
+                                mobilePlay(allData);
+                            }
+                        }
+                    })(i);
+                }
+            }
+
+            var txtSwiper;
+            var imgSwiper;
+            
+            // loadChange(0);
+
+            function loadChange(i) {
+                console.log('index----', i)
+                var txtWrapper = document.getElementById('txt-wrapper');
+                var imgWrapper = document.getElementById('img-wrapper');
+                
+                var tabData = [
+                    { name: 'ALL', txt: 'ALL', date: '2021/06/01', iconUrl: './images/channel/alllogo.png', tabDescript: 'all' },
+                    { name: 'GEN SKETCH', txt: 'GEN SKETCH', date: '2021/06/02', iconUrl: './images/channel/gslogo.png', tabDescript: '‘Gen Sketch’ -  Another bunch of struggling Aussie creatives. We’ll bring you fresh videos every week!' },
+                    { name: 'OTHER', txt: 'OTHER', date: '2021/06/03', iconUrl: './images/channel/alllogo.png', tabDescript: 'other' }
+                ];
+                let txtHtml = '';
+                let imgHtml = '';
+
+                let txt = tabData[i].name;
+                let date = tabData[i].date;
+
+
+                $('#icon-tab').attr('src', tabData[i].iconUrl);
+                $('#tab-descript').text(tabData[i].tabDescript);
+
+                
+                for (var j = 0; j < myPlayerArr.length; j++) {
+                    if (myPlayerArr[j]) {
+                        myPlayerArr[j].dispose();
+                    }
+                }
+                myPlayerArr.length = 0;
+
+                allVideoDatas[i].forEach((item, index) => {
+                    // 加载标题
+                    txtHtml += '<div class="info swiper-slide">';
+                    txtHtml += '<p class="caption" >'
+                    txtHtml += item.caption;
+                    txtHtml += '</p>';
+                    txtHtml += '<p class="date">';
+                    txtHtml += item.date;
+                    txtHtml += '</p>';
+                    txtHtml += '</div >';
+                })
+
+                allVideoDatas[i].forEach((item, index) => {
+                    // 加载图片
+                    imgHtml += '<div class="swiper-slide">';
+                    imgHtml += '<div class="video-box">';
+                    imgHtml += '<video id="my-video-'+ index + '" class="video-js slide-video vjs-fluid" controls preload="false" poster="'; // autoplay="autoplay" 
+                    imgHtml += item.poster;
+                    imgHtml += '">'; //  data-cta-target=".js-modal-4"
+                    // imgHtml += '<source src="'  + item.url + '" type="video/mp4"></source>'
+                    imgHtml += '</video>'; //  data-cta-target=".js-modal-4"
+                    imgHtml += '</div>';
+                    imgHtml += '</div >';
+                })
+
+                if (!imgSwiper) {
+                    txtWrapper.innerHTML = txtHtml;
+                    imgWrapper.innerHTML = imgHtml;
+
+                    txtSwiper = new Swiper('.txt-swiper', {
+                        observer: true,			//轮播元素为内部动态添加必须加此 修改swiper自己或子元素时，自动初始化swiper
+                        observeParents: true,
+                        direction: 'vertical',
+                        autoplay: false,
+                        // loop: true,
+                        watchSlidesVisibility: true,/*避免出现bug*/ /* 动态加载 */
+                        // loopAdditionalSlides: 1,
+                        // mousewheel: false
+                    })
+
+                    imgSwiper = new Swiper('.img-swiper', {
+                        direction: 'vertical',
+                        observer: true,			//轮播元素为内部动态添加必须加此 修改swiper自己或子元素时，自动初始化swiper
+                        observeParents: true,
+                        // loop: true,
+                        // loopAdditionalSlides: 1, // 前后各复制一个
+                        watchSlidesVisibility: true,
+                        // slidesPerView: 1,
+                        mousewheel: {
+                            sensitivity: 1.5,
+                        },
+                        autoplay: false,
+                        // spaceBetween: 30,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        },
+                        controller: {
+                            control: txtSwiper,
+                        },
+                        on: {
+                            init: function (swiper) {
+                                $('#my-video-' + swiper.activeIndex).attr('autoplay', 'true');
+                                console.log($('#my-video-' + swiper.activeIndex + '_html5_api'), 11111)
+                                allVideoDatas[i].forEach(function (item, index) {                              
+                                    initVideo(item, 'my-video-'+index);
+                                })
+                            },
+                            slideChange: function (swiper) {
+                                console.log('slideChange');
+                                // if(swiper.activeIndex > 0){   
+                                //     myPlayerArr[swiper.activeIndex].play();
+                                // }
+                                // console.log(swiper.activeLoopIndex);
+                            },
+                            slideChangeTransitionStart: function () {
+                                console.log('开始滑动---' + this.realIndex);
+                            },
+                            onSlideChangeEnd: function (swiper) {
+                                // console.log('1212121', swiper.activeLoopIndex)
+                                console.log('滑动结束');
+                                // myPlayerArr[swiper.activeIndex].play();
+                            },
+                            slideChangeTransitionEnd: function (swiper) {
+                                console.log('//切换结束时，告诉我现在是第几个slide'+this.activeIndex);//切换结束时，告诉我现在是第几个slide
+                                myPlayerArr.forEach(function (item, index) {
+                                    if(index !== swiper.activeIndex) {
+                                        myPlayerArr[index].pause();
+                                    }
+                                })
+                                myPlayerArr[swiper.activeIndex].play();
+                            },
+                        }
+                    });
+                } else { 
+                    txtSwiper.removeAllSlides();
+                    txtWrapper.innerHTML = txtHtml;
+                    txtSwiper.updateSlides();
+                    txtSwiper = new Swiper('.txt-swiper', {
+                        observer: true,			//轮播元素为内部动态添加必须加此 修改swiper自己或子元素时，自动初始化swiper
+                        observeParents: true,
+                        direction: 'vertical',
+                        autoplay: false,
+                        // loop: true,
+                        watchSlidesVisibility: true,/*避免出现bug*/ /* 动态加载 */
+                        // loopAdditionalSlides: 1,
+                        // mousewheel: false
+                    })
+
+                    imgSwiper.removeAllSlides();
+                    imgWrapper.innerHTML = imgHtml;
+                    imgSwiper.updateSlides();
+
+                    imgSwiper = new Swiper('.img-swiper', {
+                        observer: true,			//轮播元素为内部动态添加必须加此 修改swiper自己或子元素时，自动初始化swiper
+                        observeParents: true,
+                        direction: 'vertical',
+                        // loop: true,
+                        watchSlidesVisibility: true,
+                        // loopAdditionalSlides: 1, // 前后各复制一个
+                        // slidesPerView: 1,
+                        mousewheel: {
+                            sensitivity: 1.5,
+                        },
+                        autoplay: false,
+                        // spaceBetween: 30,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        },
+                        controller: {
+                            control: txtSwiper,
+                        },
+                        on: {
+                            init: function (swiper) {
+                                $('#my-video-' + swiper.activeIndex).attr('autoplay', 'true');
+                                allVideoDatas[i].forEach(function (item, index) {
+                                    initVideo(item, 'my-video-' + index);
+                                })
+                            },
+                            click: function (swiper) {
+                                // myPlayerArr[swiper.activeIndex].click();
+                            },
+                            slideChange: function (swiper) {
+                                // console.log(swiper.activeLoopIndex);
+                                console.log('slideChange');
+                                // if(swiper.activeIndex>0){
+                                //     myPlayerArr[swiper.activeIndex].play();
+                                // }
+                            },
+                            slideChangeTransitionStart: function () {
+                                console.log('开始滑动---' + this.realIndex);
+                            },
+                            onSlideChangeEnd: function (swiper) {
+                                // console.log('1212121', swiper.activeLoopIndex)
+                                console.log('滑动结束');
+                                myPlayerArr[swiper.activeIndex].play();
+                            },
+                            slideChangeTransitionEnd: function (swiper) {
+                                console.log('//切换结束时，告诉我现在是第几个slide' + this.activeIndex);//切换结束时，告诉我现在是第几个slide
+                                myPlayerArr.forEach(function (item, index) {
+                                    if (index !== swiper.activeIndex) {
+                                        myPlayerArr[index].pause();
+                                    }
+                                })
+                                myPlayerArr[swiper.activeIndex].play();
+                            }
+                        }
+                    });
+                }
+            }
+
+            
+            
+            if ($(window).width() <= 640) {
+                var allData = [];
+
+                allData = allData.concat(allVideoDatas[0]);
+                allData = allData.concat(allVideoDatas[1]);
+                // allData = allData.concat(allVideoDatas[2]);
+                mobilePlay(allData);
+
+                // mobilePlay(videodata);
+            }
+            
+            // 移动端视频初始化
+            function mobilePlay(data) {
+                var mobileVideosBox = document.getElementById("mobile-videos");
+                var html = '';
+                // aboveVideoBox.innerHTML = "<video id='my-video' class='video-js slide-video vjs-fluid' controls preload='auto' style='width: 100%;height: 100%' controlBar='true'></video>";
+                
+                for (var j = 0; j < myPlayerArr.length; j++) {
+                    if (myPlayerArr[j]) {
+                        myPlayerArr[j].dispose();
+                    }
+                }
+
+                myPlayerArr.length = 0;
+
+                mobileVideosBox.innerHTML = '';
+
+                
+
+                for (var i = 0; i < data.length; i++) {
+                    var videoItem = document.createElement('div'); // video-item
+                    var videoDescript = document.createElement('div'); // video-descript
+                    var videoBox = document.createElement('div'); // video
+
+                    videoItem.className = 'video-item';
+                    videoDescript.className = 'video-descript';
+                    videoBox.className = 'video';
+                    videoDescript.innerHTML = `<p class="caption">${data[i].caption}</p>
+                                                   <p class="date">${data[i].date}</p>`
+
+                    //  <source src="${data[i].url}" type="video/mp4">
+                    videoBox.innerHTML = `<video id='mobile-my-video-${i}' class='video-js slide-video vjs-fluid' controls preload='false' poster="${data[i].poster}" controlBar='true' webkit-playsinline playsinline x5-playsinline style='width: 100%;height: 558px'></video>`
+
+                    videoItem.appendChild(videoDescript);
+                    videoItem.appendChild(videoBox);
+                    mobileVideosBox.appendChild(videoItem);
+
+                    initVideo(data[i], `mobile-my-video-${i}`)
+                }
+                // mobileVideosBox.innerHTML = html;
+            }
+
+            // initVideo(videodata[curIndex]);
+            function initVideo(data, idName) {
+                var videoOptions = {
+                    playbackRates: [0.75, 1, 1.25, 1.5, 2],
+                    // poster: data.poster,
+                    // sources: [
+                    //     {
+                    //         src: data.url,
+                    //         type: 'video/mp4'
+                    //     }
+                    // ],
+                    muted: false,
+                    preload: 'false' // 立即开始加载视频
+                }
+
+                console.log(data)
+                let myPlayer = videojs(idName || 'my-video', videoOptions, function onReadyPlay() {
+                    // var myPlayer = this;
+                    this.src([{
+                        src: data.url,
+                        type: 'video/mp4'
+                    }, {
+                        src: data.url,
+                        type: 'video/webm'
+                    }])
+                    console.log('视频初始化')
+                    this.poster(data.poster);
+                    // this.play();
+                    this.volume(0);
+                    this.on("pause", function (ev) {
+                        var thisId = ev.target.id;
+                        var nowIndex = thisId.substr(-1, 1);
+                        var videoCaptions = $('.moile-video-list .video-descript');
+                        $(videoCaptions[nowIndex]).fadeIn();
+
+                        // $("#above-video-box .vjs-has-started").css("display", "block");
+                        // $("#above-video-box .vjs-big-play-button").css("display", "block");
+                        $(this.bigPlayButton.el_).css('display', 'block');
+                    });
+                    // 视频播放的时候隐藏播放按钮
+                    this.on("play", function (ev) {
+                        var thisId = ev.target.id;
+                        var nowIndex = thisId.substr(-1, 1);
+                        var videos = $('.moile-video-list .vjs-tech');
+                        var videoCaptions = $('.moile-video-list .video-descript');
+
+                        for (let i = 0; i < videos.length; i++) {
+                            if (nowIndex != i) {
+                                videos[i].pause();
+                                $(videoCaptions[nowIndex]).fadeOut();
+                            }
+                        }
+                        $(this.bigPlayButton.el_).css('display', 'none');
+                    });
+                    this.on('ended', function () {
+                        console.log('播放结束了');
+                        imgSwiper.slideNext();
+                    })
+
+                    myPlayerArr.push(myPlayer);
+                    // myPlayerArr[0].play();
+                    // console.log('myPlayerArr---', myPlayerArr);
+                });
+            }
+        
+            function fmtDate(obj){
+                var date =  new Date(obj);
+                var y = 1900+date.getYear();
+                var m = "0"+(date.getMonth()+1);
+                var d = "0"+date.getDate();
+                return y+"/"+m.substring(m.length-2,m.length)+"/"+d.substring(d.length-2,d.length);
+            }
+        }
+    </script>
+</body>
+
+</html>

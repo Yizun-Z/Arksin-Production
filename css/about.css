@@ -1,0 +1,213 @@
+.about {
+  font-family: 'MonumentExtended-Regular';
+  overflow: initial !important;
+}
+
+.about .section {
+  position: relative;
+  height: 100vh;
+}
+
+.about .section .page-title {
+  position: absolute;
+  top: 121px;
+  left: 12.5vw;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.about .section1 {
+  background: rgba(0, 0, 0, 0.3) url("../images/about_01.webp") no-repeat center center;
+  background-size: cover;
+}
+
+.about .section1 .item {
+  height: 50%;
+}
+
+.about .section1 .bottom {
+  padding-top: 15.925vh;
+  padding-left: 12.6vw;
+  padding-right: 10.78vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  color: #fff;
+}
+
+.about .section1 .bottom .l-txt {
+  font-size: 35px;
+}
+
+.about .section1 .bottom .r-txt .paragraph {
+  width: 770px;
+  line-height: 38px;
+}
+
+.about .section2 {
+  color: #fff;
+}
+
+.about .section2 .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: all .2s;
+  filter: grayscale(100%);
+}
+
+.about .section2 .item .middle {
+  text-align: center;
+}
+
+.about .section2 .item .middle p:not(.big-word) {
+  opacity: 0;
+}
+
+.about .section2 .item .middle .big-word {
+  position: relative;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about .section2 .item .middle .white-line {
+  margin: 5px auto;
+  width: 180px;
+  height: 0;
+  border-top: 3px solid #fff;
+  transition: all .2s;
+  opacity: 0;
+}
+
+.about .section2 .item:hover {
+  filter: grayscale(0);
+  background-size: 120%;
+}
+
+.about .section2 .item:hover .middle p, .about .section2 .item:hover .middle .white-line {
+  opacity: 1;
+}
+
+.about .section2 .item:hover .middle .white-line {
+  margin: 60px auto;
+}
+
+.about .section2 .item:hover .middle .big-word {
+  color: #fff;
+  font-size: 40px;
+}
+
+.about .section2 .item1 {
+  background: url("../images/about_second_01.webp") no-repeat center center;
+  background-size: 100%;
+}
+
+.about .section2 .item2 {
+  background: url("../images/about_second_02.webp") no-repeat center center;
+  background-size: 100%;
+}
+
+.about .section2 .item3 {
+  background: url("../images/about_second_03.webp") no-repeat center center;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .about .section {
+    height: auto;
+  }
+  .about .section .page-title {
+    position: initial;
+    font-size: 16px;
+  }
+  .about .section1 .page-title {
+    display: none;
+  }
+  .about .section1 .top {
+    height: 50vh;
+  }
+  .about .section1 .bottom {
+    height: auto;
+    padding: 50px 31px;
+  }
+  .about .section1 .bottom .mobile-page-title {
+    display: block;
+    margin: 40px 0;
+  }
+  .about .section1 .bottom .l-txt {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 49px;
+    font-weight: bold;
+  }
+  .about .section1 .bottom .r-txt {
+    padding: 0;
+  }
+  .about .section1 .bottom .r-txt .paragraph {
+    padding-right: 20px;
+    line-height: 2;
+    width: auto;
+  }
+  .about .section2 {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-bottom: 130px;
+    background-color: #000;
+  }
+  .about .section2 .page-title {
+    padding: 30px 0;
+  }
+  .about .section2 .item {
+    margin-bottom: 50px;
+    padding: 0;
+    position: relative;
+    left: 80px;
+    height: 450px;
+    filter: none;
+  }
+  .about .section2 .item .middle {
+    position: relative;
+    left: -80px;
+    padding-right: 50px;
+    text-align: left;
+  }
+  .about .section2 .item .middle .big-word {
+    font-size: 20px;
+    color: #fff;
+  }
+  .about .section2 .item .middle .white-line,
+  .about .section2 .item .middle p {
+    opacity: 1 !important;
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .about .section2 .item .middle .white-line {
+    margin: 20px 0;
+    width: 35px;
+  }
+  .about .section2 .item:hover {
+    background-size: 120% 120%;
+  }
+  .about .section2 .item:hover .middle .white-line {
+    margin: 20px 0;
+  }
+  .about .section2 .item:hover .middle .big-word {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about .section1 .bottom .r-txt {
+    font-size: 10px;
+  }
+  .about .section1 .bottom .r-txt .paragraph {
+    padding-right: 0;
+  }
+  .about .section2 .bottom .middle {
+    padding-right: 30px;
+  }
+}

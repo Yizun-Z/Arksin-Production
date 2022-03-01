@@ -1,0 +1,213 @@
+.contact{
+    height: 100vh;
+    font-family: 'MonumentExtended-Regular';
+    background-color: #f9f9f9;
+    
+    .contact-top{
+        position: relative;
+        padding-left: 100vw * 0.125;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 30px;
+        line-height: 1.3;
+        font-weight: 900;
+        height: 100vh * 0.385185;
+        background: url("../images/contact.webp") no-repeat center top / cover;
+        .page-title {
+            position: static;
+            padding-top: 120px;
+        }
+        .content{
+            position: absolute;
+            bottom: 70px;
+        }
+    }
+    .contact-bottom{
+        background-color: #f9f9f9;
+        padding: 57px 100vw * 0.125;
+        position: relative;
+        .alert {
+            width: 330px;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            text-align: center;
+            transition: all .5s;
+            transform: translateY(-50px);
+            opacity: 0;
+            margin-left: -165px;
+        }
+        .show {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        .col-md-7{
+            padding-left: 0;
+        }
+        form{
+            max-width: 850px;
+            label{
+                color: #7A7A7A;
+            }
+            .form-group {
+                position: relative;
+            }
+            .form-control{
+                margin-bottom: 25px;
+                padding: 0;
+                border: none;
+                border-bottom: 1px solid #d1d1d1;
+                border-radius: 0;
+                color: #000;
+                font-size: 16px;
+                font-weight: 900;
+                box-shadow: none;
+                outline: none;
+                background-color: transparent;
+                &.textarea-control{
+                    resize: none;
+                }
+                &:focus{
+                    border-color: #7A7A7A;
+                }
+            }
+            .submit-btn{
+                position: relative;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                color: #000;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 46px;
+                transition: all .2s;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    right: -58px;
+                    top: 0;
+                    z-index: 0;
+                    display: inline-block;
+                    align-items: center;
+                    justify-content: center;
+                    width: 46px;
+                    height: 46px;
+                    background: url("../images/r_arrow.png") no-repeat center center;
+                    border-radius: 50%;
+                    border: 1px solid #d1d1d1;
+                    transition: all .2s;
+                }
+                &:hover {
+                    &::after{
+                        transform: scale(1.15);
+                        // background-position: 28px center;    
+                    }
+                }
+            }
+        }
+        .contact-way{
+            padding-left: 77px;
+            .email-box{
+                position: relative;
+                margin-top: 65px;
+                padding: 10px 14px 10px 13px;
+                width: 380px;
+                height: 116px;
+                border: 3px dotted #d1d1d1;
+                border-radius: 15px;
+                font-size: 24px;
+                font-weight: 900;
+                line-height: 1.8;
+                img{
+                    position: absolute;
+                    right: 12px;
+                    top: -60px;
+                    z-index: 0;
+                }
+            }
+            .here{
+                font-family: 'Gotham-Book';
+                margin-top: 65px;
+                color: #000;
+                font-size: 16px;
+                .sub-title{
+                    margin-bottom: 0;
+                    color: #7A7A7A;
+                }
+                .address{
+                    white-space: nowrap;
+                }
+                .phone {
+                    font-family: 'Gotham-Book';
+                    margin-top: 25px;
+                }
+            }
+            .copyright{
+                font-size: 16px;
+                font-family: 'Gotham-Book';
+                margin-top: 10px;
+                color: #7A7A7A;
+            }
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            position: absolute;
+            bottom: -20px;
+        }
+    }
+    img.hi_1_black{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contact .contact-bottom .contact-way .here .address {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contact{
+        .contact-top{
+            height: 336px;
+            padding-left: 0;
+            font-size: 20px;
+            // background-size: cover;
+            background-image: url("../images/mobile/contact_bg.webp");
+            .content{
+                padding: 0 31px;
+            }
+            .page-title {
+                padding-left: 30px;
+            }
+        }
+        .contact-bottom{
+            padding: 0;
+            .mobile-top{
+                padding: 41px 31px 36px;
+                background-color: #F6F6F6;
+                // .submit-btn{
+                //     &::
+                // }
+            }
+            .contact-way{
+                padding: 20px 31px 86px;
+                .email-box{
+                    width: 100%;
+                    font-size: 21px;
+                    width: 100%;
+                    font-size: 18px;
+                    padding-top: 20px;
+                    img {
+                        width: 100px;
+                        top: -43px;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}

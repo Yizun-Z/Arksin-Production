@@ -1,0 +1,229 @@
+
+.about{
+    font-family: 'MonumentExtended-Regular';
+    overflow: initial !important;
+    .section{
+        position: relative; 
+        height: 100vh;
+        .page-title{
+            position: absolute;
+            top: 121px;
+            left: 100vw * 0.125;
+            z-index: 1;
+            color: #ffffff;
+            font-weight: lighter;
+            font-size: 24px;
+        }
+    }
+    .section1{
+        background: rgba(0, 0, 0, .3) url("../images/about_01.webp") no-repeat center center;
+        background-size: cover;
+        .item{
+            height: 50%;
+        }
+        .top{
+            
+        }
+        .bottom{
+            padding-top: 100vh * 0.15925;
+            padding-left: 100vw * 0.126;
+            padding-right: 100vw * 0.1078;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 13px;
+            color: #fff;
+            .l-txt{
+                font-size: 35px;
+            }
+            .r-txt{
+                .paragraph{
+                    width: 770px;
+                    line-height: 38px;
+                }
+            }
+        }
+    }
+    .section2{
+        color: #fff;
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: all .2s;
+            filter: grayscale(100%);
+            .middle{
+                text-align: center;
+                p:not(.big-word){
+                    opacity: 0;
+                }
+                .big-word{
+                    position: relative;
+                    font-size: 30px;
+                    color: rgba(255, 255, 255, .7);
+                    // &::after{
+                    //     content: '';
+                    //     display: block;
+                    //     width: 180px;
+                    //     height: 3px;
+                    //     background-color: #fff;
+                    //     position: absolute;
+                    //     left: 50px;
+                    // }
+                }
+                .white-line{
+                    margin: 5px auto;
+                    width: 180px;
+                    height: 0;
+                    border-top: 3px solid #fff;
+                    transition: all .2s;
+                    opacity: 0;
+                }
+            }
+            
+            &:hover{
+                filter: grayscale(0);
+                .middle{
+                    p, .white-line{
+                        opacity: 1;
+                    }
+                    .white-line{
+                        margin: 60px auto;
+                    }
+                    .big-word{
+                        color: #fff;
+                        font-size: 40px;
+                    }
+                }
+                background-size: 120%;
+            }
+        }
+        .item1{
+            background:  url("../images/about_second_01.webp") no-repeat center center;
+            background-size: 100%;
+        }
+        .item2{
+            background:  url("../images/about_second_02.webp") no-repeat center center;
+            background-size: 100%;
+        }
+        .item3{
+            background:  url("../images/about_second_03.webp") no-repeat center center;
+            background-size: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about{
+        .section{
+            height: auto;
+            .page-title{
+                position: initial;
+                font-size: 16px;
+            }
+        }
+        .section1{
+            .page-title{
+                display: none;
+            }
+            .top{
+                height: 50vh;
+            }
+            .bottom{
+                height: auto;
+                padding: 50px 31px;
+                
+                .mobile-page-title{
+                    display: block;
+                    margin: 40px 0;
+                }
+                .l-txt{
+                    font-size: 20px;
+                    padding: 0;
+                    margin-bottom: 49px;
+                    font-weight: bold;
+                }
+                .r-txt{
+                    padding: 0;
+                    .paragraph{
+                        padding-right: 20px;
+                        line-height: 2;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .section2{
+            width: 100%;
+            overflow: hidden;
+            padding-left: 30px;
+            padding-bottom: 130px;
+            background-color: #000;
+            .page-title{
+                padding: 30px 0;
+            } 
+            .item{
+                margin-bottom: 50px;
+                padding: 0;
+                position: relative;
+                left: 80px;
+                height: 450px;
+                filter: none;
+                .middle{
+                    position: relative;
+                    left: -80px;
+                    padding-right: 50px;
+                    text-align: left;
+                    .big-word{
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                    .white-line,
+                    p{
+                        opacity: 1 !important;
+                        font-size: 13px;
+                        line-height: 25px;
+                    }
+                    .white-line{
+                        margin: 20px 0;
+                        width: 35px;
+                    }
+                }
+                &:hover{
+                    .middle{
+                        
+                        .white-line{
+                            margin: 20px 0;
+                        }
+                        .big-word{
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
+                    background-size: 120% 120%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about{
+        .section1{
+            .bottom{
+                .r-txt{
+                    font-size: 10px;
+                    .paragraph{
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        .section2{
+            .bottom{
+                .middle{
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}

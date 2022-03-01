@@ -1,0 +1,172 @@
+.cooperation{
+    height: 100vh;
+    box-sizing: border-box;
+    .page-title{
+        position: fixed;
+        top: 121px;
+        left: 100vw * 0.125;
+        z-index: 1;
+        color: #ffffff;
+        font-weight: lighter;
+        font-size: 24px;
+    }
+}
+.layout{
+    height: 100%;
+    box-sizing: border-box;
+    .l-pic{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        color: #ffffff; 
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 900;
+        background: rgba(0,0,0, .3) url("../images/cooperation_bg.webp") no-repeat center center;
+        background-size: 100%;
+        transition: all .2s;
+        .txt-box{
+            margin-left: 100vw * 0.125;
+        }
+        &:hover{
+            background-size: 120%;
+        }
+    }
+    .r-txt{
+        color: #000;
+        height: 100%;
+        padding: 160px 100vw * 0.125 200px 100vw * 0.101;
+        box-sizing: border-box;
+        .wrapper{
+            width: 525px;
+        }
+        .headline{
+            margin-bottom: 40px;
+            font-size: 24px;
+        }
+        .paragraph{
+            margin-bottom: 40px;
+            font-size: 14px;
+            font-family: MonumentExtended-Regular, MonumentExtended;
+        }
+        .partner{
+            margin-top: 80px; 
+            .parnter-logos{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .consult-now{
+            display: flex;
+            align-items: center;
+            margin-top: 160px;
+            font-size: 24px;
+            font-weight: 900;
+            .icon-r-arrow{
+                margin-left: 26px;
+                display: inline-block;
+                width: 47px;
+                height: 47px;
+                border: 2px solid #D5D5D5;
+                border-radius: 50%;
+                text-align: center;
+                line-height:47px;
+                transition: all .2s;
+                cursor: pointer;
+                &:hover{
+                    transform: translate3d(10px, 0, 0) scale(1.2);
+                }
+            }
+        }
+    }
+    .right-bottom{
+        img.hi_1_black {
+            display: unset;
+        }
+    }
+    .menu-btn{
+        .bi-list{
+            &::before{
+                color: #000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cooperation{
+        .page-title{
+            display: none;
+            font-weight: 400;
+        }
+        .layout{
+            height: auto;
+            
+            .l-pic{
+                padding: 0 31px;
+                height: 55vh;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                background-image: url('../images/mobile/cooperation_bg.webp');
+                background-size: cover;
+                .mobile-page-title{
+                    position: initial;
+                    display: block;
+                    font-size: 16px;
+                }
+                .txt-box{
+                    font-size: 20px;
+                    margin: 0;
+                    line-height: 1;
+                    .txt-bussiness{
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .r-txt{
+                padding: 40px 30px 0;
+                .wrapper{
+                    width: auto;
+                    .headline{
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                    }
+                    .paragraph{
+                        color: #676767;
+                        font-size: 12px;
+                        line-height: 1.7;
+                        // text-align: justify;
+                    }
+                    .partner{
+                        margin-top: 0;
+                        padding-bottom: 31px;
+                        .parnter-logos{
+                            display: block;
+                        }
+                        .partner-logo{
+                            height: 39px;
+                            &:first-child {
+                                width: 50%;
+                                margin-right: 20px;
+                            }
+                            &:last-of-type {
+                                
+                            }
+                        }
+                        .p-logo-2{
+                            margin-left: 20px;
+                            width: 43px;
+                        }
+                    }
+                    .consult-now{
+                        margin: 0 -31px;
+                        padding: 31px 31px 100px;
+                        background-color: #f6f6f6;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

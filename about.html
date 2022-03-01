@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ARKSIN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-olOxEXxDwd20BlATUibkEnjPN3sVq2YWmYOnsMYutq7X8YcUdD6y/1I+f+ZOq/47" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./fullPage/jquery.fullPage.css">
+    <link rel="stylesheet" href="plugin/cta/css/zzsc.css" />
+    <link rel="stylesheet" href="./plugin/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="./plugin/vide7.10.2/css/video-js.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/about.min.css">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./css/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="./plugin/fullPage/jquery.fullPage.min.js"></script>
+    <script src="./plugin/fullPage/jquery.easing.min.js"></script>
+</head>
+
+<body class="about" id="about">
+    <!-- logo -->
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+        <a href="/"><div class="animate-logo"></div></a>
+    </div>
+    <div class="full-page-wrapper">
+        <div class="section section1">
+            <div class="page-title">ABOUT US</div>
+            <div class="item top"></div>
+            <div class="item bottom">
+                <div class="page-title mobile-page-title">ABOUT</div>
+                <div class="row-fluid clearfix">
+                    <div class="col-md-5 col-xs-12 l-txt">
+                        <p>HELLO!</p>
+                        <p>WE ARE ARKSIN.</p>
+                    </div>
+                    <div class="col-md-7 col-xs-12 r-txt">
+                        <p class="paragraph">Welcome to our playground. we are a young and passionate creativeteam who produce online video content to entertain and inspire ouraudiences. contact us, we'd love to hear from you!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section2">
+            <div class="page-title">WHAT WE DO</div>
+            <div class="row-fluid clearfix">
+                <div class="col-md-4 col-xs-12 item item1">
+                    <div class="middle">
+                        <p class="big-word">PRODUCTION</p>
+                        <hr class="white-line">
+                        <p>At the forefront is our passion for creating aesthetic, high-quality short form online content.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 item item2">
+                    <div class="middle">
+                        <p class="big-word">INFLUENCER</p>
+                        <hr class="white-line">
+                        <p>From models and actors,to TikTok personalities and lnstagram stars,influencers play a critical part in the online entertainment we consume.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 item item3">
+                    <div class="middle">
+                        <p class="big-word">SOCIAL MEDIA</p>
+                        <hr class="white-line">
+                        <p>social media isat theheart of Arksin. we all operate cohesively toproduce content for allsocial media platforms,digging into our creative roots to produce something great!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 菜单按钮/弹层 -->
+    <div class="menu-btn"><i data-cta-target=".js-modal-3" class="bi bi-list"></i></div>
+    <div id="menu"></div>
+
+    <!-- 左下角 -->
+    <div id="q-and-a"></div>
+    
+    <!-- 右下角 -->
+    <div class="right-bottom">
+        <img class="hi_1" src="./images/hi.png" alt="">
+        <img class="hi_1 on-menu-show hi_1_black" src="./images/hi_bg_black.png" alt="">
+        <img class="hi_2" src="./images/hi_2.png" alt="">
+        <img class="hi_2 on-menu-show hi_2_black" src="./images/hi_2_bg_black.png" alt="" >
+    </div>
+
+    <script src="./plugin/cta/dist/cta.min.js"></script>
+    <script src="./js/usecta.js"></script>
+    <script src="./plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="./plugin/vide7.10.2/js/video.min.js"></script>
+    <script src="./js/canvas-keyframes.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        $(function () {
+            if($(window).width() > 640){
+                console.log('大于640')
+                $(".full-page-wrapper").fullpage();
+            }
+        })
+    </script>
+</body>
+
+</html>
